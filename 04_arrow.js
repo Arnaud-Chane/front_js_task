@@ -7,8 +7,8 @@
  *   - le mot clée "function" est interdis
  */
 
-let arrow1 = (a) => {
-  return a + 1;
+let arrow1 = (x) => {
+  return x + 1;
 }
 
 /**
@@ -20,8 +20,7 @@ let arrow1 = (a) => {
  *   - le mot clée "return" est interdis
  */
 
-let arrow2 = (a) => {
-  arrow1(a);
-}
+let arrow2 = x => x + 1;
+
 
 module.exports = {arrow1, arrow2};
