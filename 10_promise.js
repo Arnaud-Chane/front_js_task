@@ -6,7 +6,9 @@
  */
 
 const sleep = () => {
-
+  return new Promise((resolve, reject) => {
+    setTimeout(() => resolve('Landing'), 2000);
+  });
 };
 
 module.exports = {sleep};
